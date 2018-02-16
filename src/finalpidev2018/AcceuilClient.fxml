@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalpidev2018.AcceuilClientController">
+   <children>
+      <StackPane prefHeight="500.0" prefWidth="194.0" style="-fx-background-color: #0a0f14;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton prefHeight="38.0" prefWidth="221.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Acceuil" textFill="#f29a5c">
+               <StackPane.margin>
+                  <Insets bottom="320.0" />
+               </StackPane.margin>
+            </JFXButton>
+            <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Divertissement" textFill="#f8f8f8">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <StackPane.margin>
+                  <Insets bottom="100.0" />
+               </StackPane.margin>
+            </MenuButton>
+            <MenuButton layoutX="10.0" layoutY="141.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Gastronomie" textFill="#f8f8f8">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </MenuButton>
+            <MenuButton layoutX="10.0" layoutY="191.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Evenements" textFill="#f8f8f8">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <StackPane.margin>
+                  <Insets top="100.0" />
+               </StackPane.margin>
+            </MenuButton>
+            <MenuButton layoutX="10.0" layoutY="241.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Bien Etre" textFill="#f8f8f8">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <StackPane.margin>
+                  <Insets top="200.0" />
+               </StackPane.margin>
+            </MenuButton>
+            <JFXButton fx:id="esPerso" layoutX="10.0" layoutY="81.0" onAction="#esPerso" prefHeight="38.0" prefWidth="221.0" style="-fx-background-color: #161f28; -fx-background-radius: 0;" text="Espace Personnelle" textFill="#f29a5c">
+               <StackPane.margin>
+                  <Insets bottom="200.0" />
+               </StackPane.margin>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <StackPane alignment="CENTER_RIGHT" layoutX="194.0" prefHeight="50.0" prefWidth="506.0" style="-fx-background-color: #cccdce;" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="deconnect" onAction="#sedeConnecter" prefHeight="30.0" style="-fx-background-radius: 5; -fx-background-color: #9a9da0;" text="Se deconnecter">
+               <StackPane.margin>
+                  <Insets right="10.0" />
+               </StackPane.margin>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <StackPane layoutX="194.0" layoutY="462.0" prefHeight="38.0" prefWidth="506.0" style="-fx-background-color: #cccdce;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
