@@ -64,14 +64,33 @@ public class EsPersoController implements Initializable {
 
     @FXML
     private void suppub_onClick(ActionEvent event) {
+            System.out.println("Suppression d'une ligne !");
+          ServicePub se= new ServicePub();
+          // int a=Integer.parseInt(titre_pub.getText());
+          se.supprimerPub(titre_pub.getText());
+         // afficher();
     }
 
     @FXML
     private void modifpub_onClick(ActionEvent event) {
+             System.out.println("Pub prete a modifier !");
+         ServicePub se= new ServicePub();
+          // int a=Integer.parseInt(titre_pub.getText());
+       
+         
+           site_pub.setText(se.modifierPub(titre_pub.getText(),4)); 
+       desc_pub.setText(se.modifierPub(titre_pub.getText(),5));
+        //afficher();
     }
 
     @FXML
     private void validpub_onClick(ActionEvent event) {
+             System.out.println("Modification terminée !");
+       ServicePub se= new ServicePub();
+    //   int a=Integer.parseInt(se.modifierPub(titre_pub.getText(), 1));
+        //System.out.println(a);
+       se.modifier2Pub(titre_pub.getText(),site_pub.getText(),desc_pub.getText(),ServicePub.getId_pub());
+      // afficher();
     }
     
 }

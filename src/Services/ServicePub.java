@@ -144,12 +144,12 @@ public class ServicePub {
       return id;
     }
 
-      public void modifier2Pub(String titre,String img,String site_web,String desc,int id)
+      public void modifier2Pub(String titre,String site_web,String desc,int id)
     {
          
          try {
              
-            String req ="update publicite set text='"+titre+"',description='"+desc+"',image='"+img+"'"
+            String req ="update publicite set text='"+titre+"',description='"+desc+"'"
                     + ",site_web='"+site_web+"' where id_pub='"+id+"'"; 
                     
              st.executeUpdate(req);
