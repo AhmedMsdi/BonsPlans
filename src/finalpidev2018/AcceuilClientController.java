@@ -5,7 +5,6 @@
  */
 package finalpidev2018;
 
-import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
@@ -25,9 +25,9 @@ import javafx.stage.Stage;
 public class AcceuilClientController implements Initializable {
 
     @FXML
-    private JFXButton deconnect;
+    private Button deconnect;
     @FXML
-    private JFXButton esPerso;
+    private Button esPerso;
 
     /**
      * Initializes the controller class.

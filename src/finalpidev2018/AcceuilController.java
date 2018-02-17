@@ -5,7 +5,6 @@
  */
 package finalpidev2018;
 
-import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,8 +14,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -26,7 +25,7 @@ import javafx.stage.StageStyle;
 public class AcceuilController implements Initializable {
 
     @FXML
-    private JFXButton connect;
+    private Button connect;
 
     /**
      * Initializes the controller class.

@@ -70,14 +70,20 @@ public class ServicePub {
                 e.setId_u(rest.getString(6));
                
                 publicites.add(e);
-                
+            
                 
             }
             
         } catch (SQLException ex) {
             Logger.getLogger(ServicePub.class.getName()).log(Level.SEVERE, null, ex);
         }
-      
+      for(publicite e : publicites){
+            String ch ="id: "+e.getId_pub()+" titre: "+e.getTitre_pub()+" description: "+e.getDesc_pub();
+            
+          System.out.println(ch);
+
+       //  return equipes;
+    }
    return publicites;
 
    
@@ -157,6 +163,8 @@ public class ServicePub {
              Logger.getLogger(ServicePub.class.getName()).log(Level.SEVERE, null, ex);
          }
     }
+      
+      
       public static int id_pub;
       public static int getId_pub(){
       return id_pub;
