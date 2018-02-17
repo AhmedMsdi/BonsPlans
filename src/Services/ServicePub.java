@@ -62,12 +62,12 @@ public class ServicePub {
                     st.executeQuery("select * from publicite");
             while(rest.next()){
                 publicite e = new publicite();
-                e.setId_pub(rest.getString(1));
-                e.setImg_pub(rest.getString(2));
+              //  e.setId_pub(rest.getString(1));
+             //   e.setImg_pub(rest.getString(2));
                 e.setTitre_pub(rest.getString(3));
                 e.setSite_pub(rest.getString(4));
                 e.setDesc_pub(rest.getString(5));
-                e.setId_u(rest.getString(6));
+              //  e.setId_u(rest.getString(6));
                
                 publicites.add(e);
             
