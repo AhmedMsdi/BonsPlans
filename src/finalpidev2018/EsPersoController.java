@@ -5,10 +5,9 @@
  */
 package finalpidev2018;
 
-<<<<<<< HEAD
-=======
+
 import Services.ServicePub;
->>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
+
 import entity.publicite;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,11 +19,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-<<<<<<< HEAD
-=======
+
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
->>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
+
 
 /**
  * FXML Controller class
@@ -36,15 +34,11 @@ public class EsPersoController implements Initializable {
     @FXML
     private Button deconnect;
  
-<<<<<<< HEAD
+
     private TableColumn<publicite, String> titre;
     private TableColumn<publicite, String> site;
     private TableColumn<publicite, String> desc;
     private TableView<publicite> Tab_pub;
-    @FXML
-    private Button esPerso;
-=======
-  
     @FXML
     private Button esPerso;
     @FXML
@@ -60,8 +54,8 @@ public class EsPersoController implements Initializable {
     @FXML
     private TableColumn<publicite, String> descpub;
     @FXML
-    private TableView<publicite> Tab_pub;
->>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
+ 
+
 
     /**
      * Initializes the controller class.
@@ -70,12 +64,7 @@ public class EsPersoController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-<<<<<<< HEAD
-        
-     
-                
-       
-=======
+
      System.out.println("Affichage du tableau !");
                 ServicePub se= new ServicePub();
         //se.selectPub();
@@ -86,20 +75,13 @@ public class EsPersoController implements Initializable {
  Tab_pub.setEditable(true);
  
      Tab_pub.setItems(data);
->>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
+
     }    
 
     @FXML
     private void sedeConnecter(ActionEvent event) {
    
-<<<<<<< HEAD
-    }
 
-
-
-    @FXML
-    private void esPerso(ActionEvent event) {
-=======
     }
 
 
@@ -107,6 +89,7 @@ public class EsPersoController implements Initializable {
     @FXML
     private void esPerso(ActionEvent event) {
     }
+    
 
     @FXML
     private void ajoutpub_onClick(ActionEvent event) {
@@ -168,7 +151,7 @@ public class EsPersoController implements Initializable {
         descpub.setCellValueFactory(new PropertyValueFactory<publicite, String>("desc_pub"));
          ObservableList<publicite> data = FXCollections.observableArrayList(se.selectPub());
  Tab_pub.setItems(data);
->>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
+
     }
     
 }
