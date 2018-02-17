@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package finalpidev2018;
+package Login;
 
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
@@ -16,17 +16,20 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
  *
- * @author a7med
+ * @author Mahdi
  */
-public class AcceuilController implements Initializable {
+public class LoginController implements Initializable {
 
     @FXML
+    private JFXButton inscrit;
+    @FXML
     private JFXButton connect;
+    @FXML
+    private JFXButton Retour;
 
     /**
      * Initializes the controller class.
@@ -37,9 +40,13 @@ public class AcceuilController implements Initializable {
     }    
 
     @FXML
-    private void seConnecter(ActionEvent event) throws IOException {
-            Stage stage = new Stage();
-       Parent root = FXMLLoader.load(getClass().getResource("AcceuilClient.fxml"));
+    private void inscrit_click(ActionEvent event) {
+    }
+
+    @FXML
+    private void connect_click(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+       Parent root = FXMLLoader.load(getClass().getResource("/AcceuilClient/AcceuilClient.fxml"));
       
         Scene scene = new Scene(root);
       
@@ -49,7 +56,21 @@ public class AcceuilController implements Initializable {
         
         Stage stage2 = (Stage) connect.getScene().getWindow(); 
         stage2.close();
-               // 
+    }
+
+    @FXML
+    private void retour_click(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+       Parent root = FXMLLoader.load(getClass().getResource("/Acceuil/Acceuil.fxml"));
+      
+        Scene scene = new Scene(root);
+      
+      stage.setScene(scene);  
+        stage.show();
+        stage.setMaximized(true);
+        
+        Stage stage2 = (Stage) connect.getScene().getWindow(); 
+        stage2.close();
     }
     
 }

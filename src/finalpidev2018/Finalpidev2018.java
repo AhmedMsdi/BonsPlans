@@ -19,7 +19,7 @@ public class Finalpidev2018 extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Acceuil.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Acceuil/Acceuil.fxml"));
         
         Scene scene = new Scene(root);
         
