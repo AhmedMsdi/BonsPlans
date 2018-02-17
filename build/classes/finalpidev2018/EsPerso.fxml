@@ -2,10 +2,20 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.control.Label?>
+>>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+>>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
@@ -83,6 +93,7 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
+<<<<<<< HEAD
             <Tab text="Mes plans">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
@@ -91,6 +102,34 @@
             <Tab text="Mes propositions">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+=======
+            <Tab text="Mes propositions">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="90.0" text="Titre" />
+                        <Label layoutX="106.0" layoutY="148.0" text="Site Web" />
+                        <Label layoutX="106.0" layoutY="209.0" text="Description" />
+                        <TextField fx:id="titre_pub" layoutX="178.0" layoutY="86.0" />
+                        <TextField fx:id="site_pub" layoutX="178.0" layoutY="144.0" />
+                        <TextField fx:id="desc_pub" layoutX="178.0" layoutY="205.0" />
+                        <Button layoutX="91.0" layoutY="276.0" mnemonicParsing="false" onAction="#ajoutpub_onClick" text="Ajouter" />
+                        <Button layoutX="154.0" layoutY="276.0" mnemonicParsing="false" onAction="#suppub_onClick" text="Supprimer" />
+                        <Button layoutX="232.0" layoutY="276.0" mnemonicParsing="false" onAction="#modifpub_onClick" text="Modifier" />
+                        <Button layoutX="301.0" layoutY="276.0" mnemonicParsing="false" onAction="#validpub_onClick" text="Valider" />
+                        <TableView fx:id="Tab_pub" editable="true" layoutX="617.0" layoutY="42.0" prefHeight="388.0" prefWidth="321.0" stylesheets="@styleglobal.css" AnchorPane.bottomAnchor="53.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="42.0">
+                          <columns>
+                            <TableColumn fx:id="titrepub" prefWidth="75.0" text="Titre" />
+                            <TableColumn fx:id="sitepub" prefWidth="75.0" text="Site" />
+                              <TableColumn fx:id="descpub" prefWidth="75.0" text="Description" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+>>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3
                </content>
             </Tab>
             <Tab text="Mes evenements">

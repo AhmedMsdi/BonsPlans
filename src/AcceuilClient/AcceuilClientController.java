@@ -6,7 +6,10 @@ package AcceuilClient;
  * and open the template in the editor.
  */
 
+<<<<<<< HEAD:src/AcceuilClient/AcceuilClientController.java
 
+=======
+>>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3:src/finalpidev2018/AcceuilClientController.java
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

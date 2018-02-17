@@ -5,7 +5,10 @@
  */
 package Acceuil;
 
+<<<<<<< HEAD:src/Acceuil/AcceuilController.java
 import Login.LoginController;
+=======
+>>>>>>> 588bf05a648a0447a0b6e122c736bb2819d4dad3:src/finalpidev2018/AcceuilController.java
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
