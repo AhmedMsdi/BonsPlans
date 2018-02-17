@@ -16,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -48,6 +49,7 @@ public class AcceuilController implements Initializable {
         
         Stage stage2 = (Stage) connect.getScene().getWindow(); 
         stage2.close();
+               // 
     }
     
 }
