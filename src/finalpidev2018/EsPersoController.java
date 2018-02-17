@@ -5,6 +5,7 @@
  */
 package finalpidev2018;
 
+import Services.ServicePub;
 import entity.publicite;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -31,6 +33,12 @@ public class EsPersoController implements Initializable {
     private TableView<publicite> Tab_pub;
     @FXML
     private Button esPerso;
+    @FXML
+    private TextField titre_pub;
+    @FXML
+    private TextField site_pub;
+    @FXML
+    private TextField desc_pub;
 
     /**
      * Initializes the controller class.
@@ -39,10 +47,7 @@ public class EsPersoController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
      
-                
-       
     }    
 
     @FXML
@@ -54,6 +59,46 @@ public class EsPersoController implements Initializable {
 
     @FXML
     private void esPerso(ActionEvent event) {
+    }
+
+    @FXML
+    private void ajoutpub_onClick(ActionEvent event) {
+          System.out.println("Ajout d'une ligne!");
+       // int a=Integer.parseInt(LoginController.getId_user());
+       ServicePub se= new ServicePub();
+      se.ajouterPub(titre_pub.getText(),site_pub.getText(),desc_pub.getText(),12);
+    //  afficher();
+    }
+
+    @FXML
+    private void suppub_onClick(ActionEvent event) {
+          System.out.println("Suppression d'une ligne !");
+          ServicePub se= new ServicePub();
+          // int a=Integer.parseInt(titre_pub.getText());
+          se.supprimerPub(titre_pub.getText());
+         // afficher();
+    }
+
+    @FXML
+    private void modifpub_onClick(ActionEvent event) {
+           System.out.println("Pub prete a modifier !");
+         ServicePub se= new ServicePub();
+          // int a=Integer.parseInt(titre_pub.getText());
+       
+         // img_pub.setText(se.modifierPub(titre_pub.getText(),3)); 
+           site_pub.setText(se.modifierPub(titre_pub.getText(),4)); 
+       desc_pub.setText(se.modifierPub(titre_pub.getText(),5));
+        //afficher();
+    }
+
+    @FXML
+    private void validpub_onClick(ActionEvent event) {
+            System.out.println("Modification terminée !");
+       ServicePub se= new ServicePub();
+    //   int a=Integer.parseInt(se.modifierPub(titre_pub.getText(), 1));
+        //System.out.println(a);
+       se.modifier2Pub(titre_pub.getText(),site_pub.getText(),desc_pub.getText(),ServicePub.getId_pub());
+      // afficher();
     }
     
 }

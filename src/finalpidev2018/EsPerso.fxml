@@ -2,10 +2,12 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
@@ -85,7 +87,20 @@
           </Tab>
             <Tab text="Mes propositions">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="106.0" layoutY="90.0" text="Titre" />
+                        <Label layoutX="106.0" layoutY="148.0" text="Site Web" />
+                        <Label layoutX="106.0" layoutY="209.0" text="Description" />
+                        <TextField fx:id="titre_pub" layoutX="178.0" layoutY="86.0" />
+                        <TextField fx:id="site_pub" layoutX="178.0" layoutY="144.0" />
+                        <TextField fx:id="desc_pub" layoutX="178.0" layoutY="205.0" />
+                        <Button layoutX="91.0" layoutY="276.0" mnemonicParsing="false" onAction="#ajoutpub_onClick" text="Ajouter" />
+                        <Button layoutX="154.0" layoutY="276.0" mnemonicParsing="false" onAction="#suppub_onClick" text="Supprimer" />
+                        <Button layoutX="232.0" layoutY="276.0" mnemonicParsing="false" onAction="#modifpub_onClick" text="Modifier" />
+                        <Button layoutX="301.0" layoutY="276.0" mnemonicParsing="false" onAction="#validpub_onClick" text="Valider" />
+                     </children>
+                  </AnchorPane>
                </content>
             </Tab>
             <Tab text="Mes evenements">
